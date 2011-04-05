@@ -1,0 +1,16 @@
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.exe.config
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\MainWindow.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\App.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout_Content.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout_MarkupCompile.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.g.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.Properties.Resources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Store.sdf
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.pdb

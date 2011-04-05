@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StoreModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="StoreModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="StoreModel.Store.Departments" store:Type="Tables" />
+    <EntitySet Name="DistributorContacts" EntityType="StoreModel.Store.DistributorContacts" store:Type="Tables" />
+    <EntitySet Name="Distributors" EntityType="StoreModel.Store.Distributors" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="StoreModel.Store.Employees" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="StoreModel.Store.Products" store:Type="Tables" />
+    <AssociationSet Name="Contact Distributor" Association="StoreModel.Store.Contact Distributor">
+      <End Role="DistributorContacts" EntitySet="DistributorContacts" />
+      <End Role="Distributors" EntitySet="Distributors" />
+    </AssociationSet>
+    <AssociationSet Name="Dapartment Manager" Association="StoreModel.Store.Dapartment Manager">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Departments" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="Department Product" Association="StoreModel.Store.Department Product">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="Distributor Product" Association="StoreModel.Store.Distributor Product">
+      <End Role="Distributors" EntitySet="Distributors" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Department_ID" />
+    </Key>
+    <Property Name="Department_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Manager_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="DistributorContacts">
+    <Key>
+      <PropertyRef Name="Contact_ID" />
+    </Key>
+    <Property Name="Contact_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" MaxLength="500" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="Fax" Type="int" />
+    <Property Name="Website" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Distributors">
+    <Key>
+      <PropertyRef Name="Distributor_ID" />
+    </Key>
+    <Property Name="Distributor_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Contact_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="First_Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Last_Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Position" Type="nvarchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Barcode" />
+    </Key>
+    <Property Name="Product_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Display_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Brand" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Barcode" Type="bigint" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="Distributor_ID" Type="int" />
+    <Property Name="Department_ID" Type="int" />
+    <Property Name="Aisle" Type="int" Nullable="false" />
+    <Property Name="Date_Added" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="Contact Distributor">
+    <End Role="DistributorContacts" Type="StoreModel.Store.DistributorContacts" Multiplicity="0..1" />
+    <End Role="Distributors" Type="StoreModel.Store.Distributors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DistributorContacts">
+        <PropertyRef Name="Contact_ID" />
+      </Principal>
+      <Dependent Role="Distributors">
+        <PropertyRef Name="Contact_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Dapartment Manager">
+    <End Role="Employees" Type="StoreModel.Store.Employees" Multiplicity="0..1" />
+    <End Role="Departments" Type="StoreModel.Store.Departments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Departments">
+        <PropertyRef Name="Manager_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Department Product">
+    <End Role="Departments" Type="StoreModel.Store.Departments" Multiplicity="0..1" />
+    <End Role="Products" Type="StoreModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Department_ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Department_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Distributor Product">
+    <End Role="Distributors" Type="StoreModel.Store.Distributors" Multiplicity="0..1" />
+    <End Role="Products" Type="StoreModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Distributors">
+        <PropertyRef Name="Distributor_ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Distributor_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

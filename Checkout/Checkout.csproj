@@ -87,11 +87,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\StoreModel.Designer.cs">
+    <Compile Include="Models\IStoreRepository.cs" />
+    <Compile Include="Models\StoreModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StoreModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\StoreRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,7 +111,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model\StoreModel.edmx">
+    <EntityDeploy Include="Models\StoreModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>StoreModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
