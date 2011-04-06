@@ -99,6 +99,14 @@ namespace Checkout.Models
         }
 
         /// <summary>
+        /// Finds all Products
+        /// </summary>
+        /// <returns>IQueryable<Product></returns>
+        public IQueryable<Product> FindProduct()
+        {
+            return from p in db.Products select p;
+        }
+        /// <summary>
         /// Finds the product with the corresponding Product_ID. If no product is found, returns Null.
         /// </summary>
         /// <param name="Product_ID">The Product ID of a product in the database</param>
@@ -106,6 +114,15 @@ namespace Checkout.Models
         public Product FindProduct(int Product_ID)
         {
             return db.Products.FirstOrDefault(p => p.Product_ID == Product_ID);
+        }
+
+        /// <summary>
+        /// Returns all Departments
+        /// </summary>
+        /// <returns>IQueryable<Department></returns>
+        public IQueryable<Department> FindDepartment()
+        {
+            return from d in db.Departments select d;
         }
         /// <summary>
         /// Finds the product with the corresponding Department_ID. If no Department is found, returns Null.
@@ -116,6 +133,15 @@ namespace Checkout.Models
         {
             return db.Departments.FirstOrDefault(d => d.Department_ID == Department_ID);
         }
+
+        /// <summary>
+        /// Finds all Employees
+        /// </summary>
+        /// <returns>IQueryable<Employee></returns>
+        public IQueryable<Employee> FindEmployee()
+        {
+            return from e in db.Employees select e;
+        }
         /// <summary>
         /// Finds the Employee with the corresponding Employee_ID. If no Employee is found, returns Null.
         /// </summary>
@@ -125,6 +151,15 @@ namespace Checkout.Models
         {
             return db.Employees.FirstOrDefault(e => e.Employee_ID == Employee_ID);
         }
+
+        /// <summary>
+        /// Finds all Distributors
+        /// </summary>
+        /// <returns>IQueryable<Distributor></returns>
+        public IQueryable<Distributor> FindDistributor()
+        {
+            return from d in db.Distributors select d;
+        }
         /// <summary>
         /// Finds the Distributor with the corresponding Distributor_ID. If no Distributor is found, returns Null.
         /// </summary>
@@ -133,6 +168,15 @@ namespace Checkout.Models
         public Distributor FindDistributor(int Distributor_ID)
         {
             return db.Distributors.FirstOrDefault(d => d.Distributor_ID == Distributor_ID);
+        }
+
+        /// <summary>
+        /// Finds all DistributorContacts
+        /// </summary>
+        /// <returns>IQueryable<DistributorContact></returns>
+        public IQueryable<DistributorContact> FindDistributorContact()
+        {
+            return from c in db.DistributorContacts select c;
         }
         /// <summary>
         /// Finds the DistributorContact with the corresponding Contact_ID. If no DistributorContact is found, returns Null.
@@ -144,6 +188,7 @@ namespace Checkout.Models
             return db.DistributorContacts.FirstOrDefault(dc => dc.Contact_ID == Contact_ID);
         }
 
+
         /// <summary>
         /// Saves and commits all changes to the database.
         /// </summary>
@@ -151,5 +196,10 @@ namespace Checkout.Models
         {
             db.SaveChanges();
         }
+
+        
+     
+        
+        
     }
 }

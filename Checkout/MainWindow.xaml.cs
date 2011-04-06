@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Checkout.Models;
 
 namespace Checkout
 {
@@ -22,6 +23,8 @@ namespace Checkout
         public MainWindow()
         {
             InitializeComponent();
+            repo = new StoreRepository();
         }
+        StoreRepository repo;
     }
 }
