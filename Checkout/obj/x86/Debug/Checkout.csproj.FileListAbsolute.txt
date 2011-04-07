@@ -14,3 +14,9 @@ C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\De
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.pdb
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.exe
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.g.cs

@@ -23,8 +23,30 @@ namespace Checkout
         public MainWindow()
         {
             InitializeComponent();
-            repo = new StoreRepository();
         }
-        StoreRepository repo;
+
+        private void btnLaunchPOS_Click(object sender, RoutedEventArgs e)
+        {
+            //Initialize the PointofSale form.
+            PointofSale form = new PointofSale();
+            //Show the Point of Sale form.
+            form.Show();
+        }
+
+        private void btnManage_Click(object sender, RoutedEventArgs e)
+        {
+            //Initialize the Manager form.
+            Manager form = new Manager();
+            //Show the Manager form.
+            form.Show();
+        }
+
+        private void btnStatistics_Click(object sender, RoutedEventArgs e)
+        {
+            //Initialize the Statistics form.
+            Statistics form = new Statistics();
+            //Show the Statistics form.
+            form.Show();
+        }
     }
 }
