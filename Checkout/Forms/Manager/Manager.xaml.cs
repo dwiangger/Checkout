@@ -10,6 +10,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Checkout.Resources;
+using Checkout.Forms.Manager;
 
 namespace Checkout
 {
@@ -21,6 +23,19 @@ namespace Checkout
         public Manager()
         {
             InitializeComponent();
+            GetCultureContent();
+        }
+
+        private void GetCultureContent()
+        {
+            btnViewProducts.Content = ManagerResources.btnViewProducts;
+            lblInfo.Content = ManagerResources.lblInfo;
+        }
+
+        private void btnViewProduct_Click(object sender, RoutedEventArgs e)
+        {
+            View_Products form = new View_Products();
+            form.Show();
         }
     }
 }

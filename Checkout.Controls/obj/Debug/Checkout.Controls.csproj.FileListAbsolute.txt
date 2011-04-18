@@ -1,0 +1,16 @@
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\Checkout.Controls.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\Checkout.Controls.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\Checkout.Resources.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\Checkout.Resources.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\de-DE\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\bin\Debug\fr-CA\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\ProductControl.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\ProductControl.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\Checkout.Controls_MarkupCompile.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\Checkout.Controls.g.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\Checkout.Controls.Properties.Resources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\Checkout.Controls.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Controls\obj\Debug\Checkout.Controls.pdb

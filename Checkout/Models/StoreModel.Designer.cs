@@ -18,7 +18,6 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("StoreModel", "Dapartment_Manager", "Employees", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(Checkout.Models.Employee), "Departments", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Checkout.Models.Department), true)]
 [assembly: EdmRelationshipAttribute("StoreModel", "Department_Product", "Departments", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(Checkout.Models.Department), "Products", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Checkout.Models.Product), true)]
 [assembly: EdmRelationshipAttribute("StoreModel", "Distributor_Product", "Distributors", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(Checkout.Models.Distributor), "Products", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Checkout.Models.Product), true)]
 [assembly: EdmRelationshipAttribute("StoreModel", "Contact_Distributor", "DistributorContact", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(Checkout.Models.DistributorContact), "Distributor", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Checkout.Models.Distributor), true)]
@@ -124,22 +123,6 @@ namespace Checkout.Models
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<Employee> Employees
-        {
-            get
-            {
-                if ((_Employees == null))
-                {
-                    _Employees = base.CreateObjectSet<Employee>("Employees");
-                }
-                return _Employees;
-            }
-        }
-        private ObjectSet<Employee> _Employees;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<Product> Products
         {
             get
@@ -178,14 +161,6 @@ namespace Checkout.Models
         public void AddToDistributors(Distributor distributor)
         {
             base.AddObject("Distributors", distributor);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the Employees EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToEmployees(Employee employee)
-        {
-            base.AddObject("Employees", employee);
         }
     
         /// <summary>
@@ -304,72 +279,10 @@ namespace Checkout.Models
         private global::System.String _Description;
         partial void OnDescriptionChanging(global::System.String value);
         partial void OnDescriptionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Int32> Manager_ID
-        {
-            get
-            {
-                return _Manager_ID;
-            }
-            set
-            {
-                OnManager_IDChanging(value);
-                ReportPropertyChanging("Manager_ID");
-                _Manager_ID = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("Manager_ID");
-                OnManager_IDChanged();
-            }
-        }
-        private Nullable<global::System.Int32> _Manager_ID;
-        partial void OnManager_IDChanging(Nullable<global::System.Int32> value);
-        partial void OnManager_IDChanged();
 
         #endregion
     
         #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("StoreModel", "Dapartment_Manager", "Employees")]
-        public Employee Employee
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("StoreModel.Dapartment_Manager", "Employees").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("StoreModel.Dapartment_Manager", "Employees").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<Employee> EmployeeReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("StoreModel.Dapartment_Manager", "Employees");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Employee>("StoreModel.Dapartment_Manager", "Employees", value);
-                }
-            }
-        }
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -793,164 +706,6 @@ namespace Checkout.Models
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="StoreModel", Name="Employee")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class Employee : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new Employee object.
-        /// </summary>
-        /// <param name="employee_ID">Initial value of the Employee_ID property.</param>
-        /// <param name="first_Name">Initial value of the First_Name property.</param>
-        /// <param name="last_Name">Initial value of the Last_Name property.</param>
-        /// <param name="position">Initial value of the Position property.</param>
-        public static Employee CreateEmployee(global::System.Int32 employee_ID, global::System.String first_Name, global::System.String last_Name, global::System.String position)
-        {
-            Employee employee = new Employee();
-            employee.Employee_ID = employee_ID;
-            employee.First_Name = first_Name;
-            employee.Last_Name = last_Name;
-            employee.Position = position;
-            return employee;
-        }
-
-        #endregion
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 Employee_ID
-        {
-            get
-            {
-                return _Employee_ID;
-            }
-            set
-            {
-                if (_Employee_ID != value)
-                {
-                    OnEmployee_IDChanging(value);
-                    ReportPropertyChanging("Employee_ID");
-                    _Employee_ID = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("Employee_ID");
-                    OnEmployee_IDChanged();
-                }
-            }
-        }
-        private global::System.Int32 _Employee_ID;
-        partial void OnEmployee_IDChanging(global::System.Int32 value);
-        partial void OnEmployee_IDChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String First_Name
-        {
-            get
-            {
-                return _First_Name;
-            }
-            set
-            {
-                OnFirst_NameChanging(value);
-                ReportPropertyChanging("First_Name");
-                _First_Name = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("First_Name");
-                OnFirst_NameChanged();
-            }
-        }
-        private global::System.String _First_Name;
-        partial void OnFirst_NameChanging(global::System.String value);
-        partial void OnFirst_NameChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Last_Name
-        {
-            get
-            {
-                return _Last_Name;
-            }
-            set
-            {
-                OnLast_NameChanging(value);
-                ReportPropertyChanging("Last_Name");
-                _Last_Name = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Last_Name");
-                OnLast_NameChanged();
-            }
-        }
-        private global::System.String _Last_Name;
-        partial void OnLast_NameChanging(global::System.String value);
-        partial void OnLast_NameChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Position
-        {
-            get
-            {
-                return _Position;
-            }
-            set
-            {
-                OnPositionChanging(value);
-                ReportPropertyChanging("Position");
-                _Position = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("Position");
-                OnPositionChanged();
-            }
-        }
-        private global::System.String _Position;
-        partial void OnPositionChanging(global::System.String value);
-        partial void OnPositionChanged();
-
-        #endregion
-    
-        #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("StoreModel", "Dapartment_Manager", "Departments")]
-        public EntityCollection<Department> Departments
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Department>("StoreModel.Dapartment_Manager", "Departments");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Department>("StoreModel.Dapartment_Manager", "Departments", value);
-                }
-            }
-        }
-
-        #endregion
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="StoreModel", Name="Product")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -1058,30 +813,6 @@ namespace Checkout.Models
         private global::System.String _Display_Name;
         partial void OnDisplay_NameChanging(global::System.String value);
         partial void OnDisplay_NameChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Description
-        {
-            get
-            {
-                return _Description;
-            }
-            set
-            {
-                OnDescriptionChanging(value);
-                ReportPropertyChanging("Description");
-                _Description = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Description");
-                OnDescriptionChanged();
-            }
-        }
-        private global::System.String _Description;
-        partial void OnDescriptionChanging(global::System.String value);
-        partial void OnDescriptionChanged();
     
         /// <summary>
         /// No Metadata Documentation available.

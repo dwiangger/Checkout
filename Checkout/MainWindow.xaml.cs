@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Checkout.Models;
+using Checkout.Resources;
 
 namespace Checkout
 {
@@ -25,6 +26,21 @@ namespace Checkout
             InitializeComponent();
         }
 
+        private void GetCultureContent()
+        {
+            Title = MainWindowResources.FormTitle;
+            lblInfo.Content = MainWindowResources.lblInfo;
+            btnLaunchPOS.Content = MainWindowResources.btnLaunchPOS;
+            btnManage.Content = MainWindowResources.btnManage;
+            btnStatistics.Content = MainWindowResources.btnStatistics;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Load culture specific content
+            GetCultureContent();
+        }
+        
         private void btnLaunchPOS_Click(object sender, RoutedEventArgs e)
         {
             //Initialize the PointofSale form.
@@ -47,6 +63,11 @@ namespace Checkout
             Statistics form = new Statistics();
             //Show the Statistics form.
             form.Show();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

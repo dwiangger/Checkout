@@ -1,22 +1,57 @@
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Store.sdf
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.exe.config
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.Controls.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.Resources.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.Controls.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.Resources.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\de-DE\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\fr-CA\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Add Product.baml
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\MainWindow.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.baml
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Add Product.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\View Products.g.cs
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.g.cs
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\App.g.cs
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout_Content.g.cs
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout_MarkupCompile.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout_MarkupCompile.lref
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\View Products.baml
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.g.resources
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.Properties.Resources.resources
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Store.sdf
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.exe
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\bin\Debug\Checkout.pdb
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.exe
 C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Checkout.pdb
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.baml
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.baml
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.baml
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Statistics\Statistics.g.cs
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Manager\Manager.g.cs
-C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout\obj\x86\Debug\Forms\Point of Sale\PointofSale.g.cs

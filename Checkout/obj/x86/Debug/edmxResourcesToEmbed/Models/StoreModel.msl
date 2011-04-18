@@ -7,7 +7,6 @@
           <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Manager_ID" ColumnName="Manager_ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -33,23 +32,12 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="StoreModel.Employee">
-        <MappingFragment StoreEntitySet="Employees">
-          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
-          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
-          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
-          <ScalarProperty Name="Position" ColumnName="Position" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="StoreModel.Product">
         <MappingFragment StoreEntitySet="Products">
           <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Brand" ColumnName="Brand" />
           <ScalarProperty Name="Barcode" ColumnName="Barcode" />
           <ScalarProperty Name="Price" ColumnName="Price" />

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Checkout.Forms.Manager.Add_Product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:Checkout.Controls;assembly=Checkout.Controls"
+        Title="Add Product" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="238" d:DesignWidth="470" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="0.229*"/>
+    		<RowDefinition Height="0.674*"/>
+    	</Grid.RowDefinitions>
+        <Label Name="lblInfo" Content="Fill in data about the product: "  HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" />
+        <Controls:ProductControl Grid.Row="1" />
+    </Grid>
+</Window>

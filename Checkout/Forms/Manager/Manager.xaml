@@ -1,8 +1,17 @@
-﻿<Window x:Class="Checkout.Manager"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Checkout Manager" Height="300" Width="300" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Checkout.Manager"
+        Title="Checkout Manager" WindowState="Normal" WindowStartupLocation="CenterScreen" Height="103" Width="189" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Name="lblInfo" Grid.ColumnSpan="3" HorizontalContentAlignment="Stretch" />
+        <Button x:Name="btnViewProducts" Grid.Row="1" Click="btnViewProduct_Click" IsDefault="True" Margin="0" Padding="1,5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" />
     </Grid>
 </Window>

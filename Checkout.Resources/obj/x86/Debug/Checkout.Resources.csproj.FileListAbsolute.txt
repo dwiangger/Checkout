@@ -1,0 +1,29 @@
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\bin\Debug\Checkout.Resources.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\bin\Debug\Checkout.Resources.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\bin\Debug\de-DE\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\bin\Debug\fr-CA\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\App.g.cs
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources_MarkupCompile.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.Add ProductResources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.MainWindowResources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ManagerResources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ProductResources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.Properties.Resources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ViewProductsResources.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.Add ProductResources.de-DE.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.Add ProductResources.fr-CA.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.MainWindowResources.de-DE.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.MainWindowResources.fr-CA.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ManagerResources.de-DE.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ManagerResources.fr-CA.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ProductResources.de-DE.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ProductResources.fr-CA.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ViewProductsResources.de-DE.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.ViewProductsResources.fr-CA.resources
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\de-DE\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\fr-CA\Checkout.Resources.resources.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.exe
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Resources\obj\x86\Debug\Checkout.Resources.pdb

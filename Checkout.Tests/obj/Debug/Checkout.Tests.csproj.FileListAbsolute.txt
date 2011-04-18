@@ -1,0 +1,5 @@
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Tests\bin\Debug\Checkout.Tests.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Tests\bin\Debug\Checkout.Tests.pdb
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Tests\obj\Debug\Checkout.Tests.dll
+C:\Users\Kevin\Documents\Visual Studio 2010\Projects\C#\Checkout\Checkout.Tests\obj\Debug\Checkout.Tests.pdb

@@ -33,14 +33,6 @@ namespace Checkout.Models
             db.Departments.AddObject(Department);
         }
         /// <summary>
-        /// Add an Employee to the database.
-        /// </summary>
-        /// <param name="Product">The Employee to be added</param>
-        public void Add(Employee Employee)
-        {
-            db.Employees.AddObject(Employee);
-        }
-        /// <summary>
         /// Add a Distributor to the database.
         /// </summary>
         /// <param name="Product">The Distributor to be added</param>
@@ -72,14 +64,6 @@ namespace Checkout.Models
         public void Delete(Department Department)
         {
             db.Departments.DeleteObject(Department);
-        }
-        /// <summary>
-        /// Delete a Employee from the database.
-        /// </summary>
-        /// <param name="Product">The Employee to be deleted</param>
-        public void Delete(Employee Employee)
-        {
-            db.Employees.DeleteObject(Employee);
         }
         /// <summary>
         /// Delete a Distributor from the database.
@@ -132,24 +116,6 @@ namespace Checkout.Models
         public Department FindDepartment(int Department_ID)
         {
             return db.Departments.FirstOrDefault(d => d.Department_ID == Department_ID);
-        }
-
-        /// <summary>
-        /// Finds all Employees
-        /// </summary>
-        /// <returns>IQueryable<Employee></returns>
-        public IQueryable<Employee> FindEmployee()
-        {
-            return from e in db.Employees select e;
-        }
-        /// <summary>
-        /// Finds the Employee with the corresponding Employee_ID. If no Employee is found, returns Null.
-        /// </summary>
-        /// <param name="Employee_ID">The Employee ID of a product in the database</param>
-        /// <returns>Employee, or if no Employee is found, returns Null.</returns>
-        public Employee FindEmployee(int Employee_ID)
-        {
-            return db.Employees.FirstOrDefault(e => e.Employee_ID == Employee_ID);
         }
 
         /// <summary>

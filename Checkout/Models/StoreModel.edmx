@@ -9,15 +9,10 @@
           <EntitySet Name="Departments" EntityType="StoreModel.Store.Departments" store:Type="Tables" />
           <EntitySet Name="DistributorContacts" EntityType="StoreModel.Store.DistributorContacts" store:Type="Tables" />
           <EntitySet Name="Distributors" EntityType="StoreModel.Store.Distributors" store:Type="Tables" />
-          <EntitySet Name="Employees" EntityType="StoreModel.Store.Employees" store:Type="Tables" />
           <EntitySet Name="Products" EntityType="StoreModel.Store.Products" store:Type="Tables" />
           <AssociationSet Name="Contact Distributor" Association="StoreModel.Store.Contact Distributor">
             <End Role="DistributorContacts" EntitySet="DistributorContacts" />
             <End Role="Distributors" EntitySet="Distributors" />
-          </AssociationSet>
-          <AssociationSet Name="Dapartment Manager" Association="StoreModel.Store.Dapartment Manager">
-            <End Role="Employees" EntitySet="Employees" />
-            <End Role="Departments" EntitySet="Departments" />
           </AssociationSet>
           <AssociationSet Name="Department Product" Association="StoreModel.Store.Department Product">
             <End Role="Departments" EntitySet="Departments" />
@@ -35,7 +30,6 @@
           <Property Name="Department_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
           <Property Name="Description" Type="nvarchar" MaxLength="1000" />
-          <Property Name="Manager_ID" Type="int" />
         </EntityType>
         <EntityType Name="DistributorContacts">
           <Key>
@@ -56,15 +50,6 @@
           <Property Name="Distributor_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
           <Property Name="Contact_ID" Type="int" />
-        </EntityType>
-        <EntityType Name="Employees">
-          <Key>
-            <PropertyRef Name="Employee_ID" />
-          </Key>
-          <Property Name="Employee_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="nvarchar" Nullable="false" MaxLength="30" />
-          <Property Name="Last_Name" Type="nvarchar" Nullable="false" MaxLength="30" />
-          <Property Name="Position" Type="nvarchar" Nullable="false" MaxLength="200" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
@@ -92,18 +77,6 @@
             </Principal>
             <Dependent Role="Distributors">
               <PropertyRef Name="Contact_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="Dapartment Manager">
-          <End Role="Employees" Type="StoreModel.Store.Employees" Multiplicity="0..1" />
-          <End Role="Departments" Type="StoreModel.Store.Departments" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employees">
-              <PropertyRef Name="Employee_ID" />
-            </Principal>
-            <Dependent Role="Departments">
-              <PropertyRef Name="Manager_ID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -139,12 +112,7 @@
           <EntitySet Name="Departments" EntityType="StoreModel.Department" />
           <EntitySet Name="DistributorContacts" EntityType="StoreModel.DistributorContact" />
           <EntitySet Name="Distributors" EntityType="StoreModel.Distributor" />
-          <EntitySet Name="Employees" EntityType="StoreModel.Employee" />
           <EntitySet Name="Products" EntityType="StoreModel.Product" />
-          <AssociationSet Name="Dapartment_Manager" Association="StoreModel.Dapartment_Manager">
-            <End Role="Employees" EntitySet="Employees" />
-            <End Role="Departments" EntitySet="Departments" />
-          </AssociationSet>
           <AssociationSet Name="Department_Product" Association="StoreModel.Department_Product">
             <End Role="Departments" EntitySet="Departments" />
             <End Role="Products" EntitySet="Products" />
@@ -165,8 +133,6 @@
           <Property Name="Department_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="Description" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
-          <Property Name="Manager_ID" Type="Int32" />
-          <NavigationProperty Name="Employee" Relationship="StoreModel.Dapartment_Manager" FromRole="Departments" ToRole="Employees" />
           <NavigationProperty Name="Products" Relationship="StoreModel.Department_Product" FromRole="Departments" ToRole="Products" />
         </EntityType>
         <EntityType Name="DistributorContact">
@@ -192,16 +158,6 @@
           <NavigationProperty Name="Products" Relationship="StoreModel.Distributor_Product" FromRole="Distributors" ToRole="Products" />
           <NavigationProperty Name="DistributorContact" Relationship="StoreModel.Contact_Distributor" FromRole="Distributor" ToRole="DistributorContact" />
         </EntityType>
-        <EntityType Name="Employee">
-          <Key>
-            <PropertyRef Name="Employee_ID" />
-          </Key>
-          <Property Name="Employee_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
-          <Property Name="Last_Name" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
-          <Property Name="Position" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="Departments" Relationship="StoreModel.Dapartment_Manager" FromRole="Employees" ToRole="Departments" />
-        </EntityType>
         <EntityType Name="Product">
           <Key>
             <PropertyRef Name="Product_ID" />
@@ -210,7 +166,6 @@
           <Property Name="Product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="Display_Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
-          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
           <Property Name="Brand" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="Barcode" Type="Int64" Nullable="false" />
           <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
@@ -221,18 +176,6 @@
           <NavigationProperty Name="Department" Relationship="StoreModel.Department_Product" FromRole="Products" ToRole="Departments" />
           <NavigationProperty Name="Distributor" Relationship="StoreModel.Distributor_Product" FromRole="Products" ToRole="Distributors" />
         </EntityType>
-        <Association Name="Dapartment_Manager">
-          <End Role="Employees" Type="StoreModel.Employee" Multiplicity="0..1" />
-          <End Role="Departments" Type="StoreModel.Department" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employees">
-              <PropertyRef Name="Employee_ID" />
-            </Principal>
-            <Dependent Role="Departments">
-              <PropertyRef Name="Manager_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="Department_Product">
           <End Role="Departments" Type="StoreModel.Department" Multiplicity="0..1" />
           <End Role="Products" Type="StoreModel.Product" Multiplicity="*" />
@@ -279,7 +222,6 @@
             <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
             <ScalarProperty Name="Name" ColumnName="Name" />
             <ScalarProperty Name="Description" ColumnName="Description" />
-            <ScalarProperty Name="Manager_ID" ColumnName="Manager_ID" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="DistributorContacts"><EntityTypeMapping TypeName="StoreModel.DistributorContact"><MappingFragment StoreEntitySet="DistributorContacts">
             <ScalarProperty Name="Contact_ID" ColumnName="Contact_ID" />
@@ -295,17 +237,10 @@
             <ScalarProperty Name="Name" ColumnName="Name" />
             <ScalarProperty Name="Contact_ID" ColumnName="Contact_ID" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
-          <EntitySetMapping Name="Employees"><EntityTypeMapping TypeName="StoreModel.Employee"><MappingFragment StoreEntitySet="Employees">
-            <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
-            <ScalarProperty Name="First_Name" ColumnName="First_Name" />
-            <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
-            <ScalarProperty Name="Position" ColumnName="Position" />
-          </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="Products"><EntityTypeMapping TypeName="StoreModel.Product"><MappingFragment StoreEntitySet="Products">
             <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
             <ScalarProperty Name="Name" ColumnName="Name" />
             <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
-            <ScalarProperty Name="Description" ColumnName="Description" />
             <ScalarProperty Name="Brand" ColumnName="Brand" />
             <ScalarProperty Name="Barcode" ColumnName="Barcode" />
             <ScalarProperty Name="Price" ColumnName="Price" />
@@ -335,18 +270,13 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="StoreModel">
-        <EntityTypeShape EntityType="StoreModel.Department" Width="1.5" PointX="3" PointY="2.25" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreModel.Department" Width="1.5" PointX="3" PointY="2.25" Height="1.7879850260416665" IsExpanded="true" />
         <EntityTypeShape EntityType="StoreModel.DistributorContact" Width="1.625" PointX="10.125" PointY="2.5" Height="2.5571907552083317" IsExpanded="true" />
         <EntityTypeShape EntityType="StoreModel.Distributor" Width="1.5" PointX="8.125" PointY="2.125" Height="1.9802864583333326" IsExpanded="true" />
-        <EntityTypeShape EntityType="StoreModel.Employee" Width="1.5" PointX="0.5" PointY="2.75" Height="1.9802864583333335" IsExpanded="true" />
-        <EntityTypeShape EntityType="StoreModel.Product" Width="1.5" PointX="5.25" PointY="1" Height="3.5186979166666656" IsExpanded="true" />
-        <AssociationConnector Association="StoreModel.Dapartment_Manager" ManuallyRouted="false">
-          <ConnectorPoint PointX="2" PointY="3.5862939453125" />
-          <ConnectorPoint PointX="3" PointY="3.5862939453125" />
-        </AssociationConnector>
+        <EntityTypeShape EntityType="StoreModel.Product" Width="1.5" PointX="5.25" PointY="1" Height="3.3263964843749996" IsExpanded="true" />
         <AssociationConnector Association="StoreModel.Department_Product" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="3.3362939453125" />
-          <ConnectorPoint PointX="5.25" PointY="3.3362939453125" />
+          <ConnectorPoint PointX="4.5" PointY="3.1439925130208333" />
+          <ConnectorPoint PointX="5.25" PointY="3.1439925130208333" />
         </AssociationConnector>
         <AssociationConnector Association="StoreModel.Distributor_Product" ManuallyRouted="false">
           <ConnectorPoint PointX="8.125" PointY="3.1151432291666663" />
