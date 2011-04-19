@@ -31,6 +31,7 @@ namespace Checkout.ViewModels
         public string lblDepartment { get { return Resources.ViewProductsResources.lblDepartment; } }
         public string lblBarcode { get { return Resources.ViewProductsResources.lblBarcode; } }
         public string lblDistributor { get { return Resources.ViewProductsResources.lblDistributor; } }
+        public string lblDisplayName { get { return Resources.ViewProductsResources.lblDisplayName; } }
         public string btnAddProduct { get { return Resources.ViewProductsResources.btnAddProduct; } }
         public string btnSortByName { get { return Resources.ViewProductsResources.btnSortByName; } }
         public string btnSortByPrice { get { return Resources.ViewProductsResources.btnSortByPrice; } }

@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
         xmlns:vm="clr-namespace:Checkout.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="window" mc:Ignorable="d" x:Class="Checkout.Forms.Manager.View_Products"
-        Title="{Binding FormTitle}" Height="470" Width="752.5" Background="White" WindowStartupLocation="CenterScreen">
+        Title="{Binding FormTitle}" MinHeight="480" MinWidth="760" Background="White" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.099*"/>
-            <ColumnDefinition Width="0.901*"/>
+            <ColumnDefinition Width="Auto" MinWidth="53.391"/>
+            <ColumnDefinition/>
             <ColumnDefinition Width="Auto" MinWidth="164.987"/>
             <ColumnDefinition Width="Auto" MinWidth="32.21"/>
         </Grid.ColumnDefinitions>
@@ -26,7 +26,7 @@
             <Button x:Name="btnSortByDistributor" Content="{Binding btnSortByDistributor}" Width="75" Margin="6,0,0,0" />
             <TextBox x:Name="txtSearch" Text="{Binding txtSearch}" Margin="6,0,0,0" />
         </DockPanel>
-        <Button x:Name="btnAddProduct" Content="{Binding btnAddProduct}" Grid.Column="3" VerticalAlignment="Center" Padding="10,1" HorizontalAlignment="Center" Click="btnAddNewProduct_Click" />
+        <Button x:Name="btnAddProduct" Content="{Binding btnAddProduct}" Grid.Column="3" VerticalAlignment="Center" Padding="10,1" HorizontalAlignment="Right" Click="btnAddNewProduct_Click" />
         <Grid Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.386*"/>
@@ -42,15 +42,15 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label x:Name="lblSelectedName" Content="{Binding Name}" FontStyle="Italic" FontSize="12" Grid.Row="0" />
-                <Label x:Name="lblDisplayName" Content="{Binding lblDisplayName}" Grid.Row="1" />
-                <Label x:Name="lblPrice" Content="{Binding lblPrice}" Grid.Row="2" />
-                <Label x:Name="lblBrand" Content="{Binding lblBrand}" Grid.Row="3" />
-                <Label x:Name="lblAisle" Content="{Binding lblAisle}" Grid.Row="4" />
-                <Label x:Name="lblDepartment" Content="{Binding lblDepartment}" Grid.Row="5" />
-                <Label x:Name="lblBarcode" Content="{Binding lblBarcode}" Grid.Row="6" />
-                <Label x:Name="lblDistributor" Content="{Binding lblDistributor}" Grid.Row="7" />
+                <Label x:Name="lblDisplayName" Content="{Binding lblDisplayName}" Grid.Row="1" VerticalAlignment="Center" />
+                <Label x:Name="lblPrice" Content="{Binding lblPrice}" Grid.Row="2" VerticalAlignment="Center" />
+                <Label x:Name="lblBrand" Content="{Binding lblBrand}" Grid.Row="3" VerticalAlignment="Center" />
+                <Label x:Name="lblAisle" Content="{Binding lblAisle}" Grid.Row="4" VerticalAlignment="Center" />
+                <Label x:Name="lblDepartment" Content="{Binding lblDepartment}" Grid.Row="5" VerticalAlignment="Center" />
+                <Label x:Name="lblBarcode" Content="{Binding lblBarcode}" Grid.Row="6" VerticalAlignment="Center" />
+                <Label x:Name="lblDistributor" Content="{Binding lblDistributor}" Grid.Row="7" VerticalAlignment="Center" />
             </Grid>
             <Grid Grid.Column="1" DataContext="{Binding SelectedItem, ElementName=lsvProducts}">
                 <Grid.RowDefinitions>
@@ -62,14 +62,16 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="txtSelectedDisplayName" Text="{Binding Display_Name}" Grid.Row="1" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedPrice" Text="{Binding Price}" Grid.Row="2" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedBrand" Text="{Binding Brand}" Grid.Row="3" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedAisle" Text="{Binding Aisle}" Grid.Row="4" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedDepartment" Text="{Binding Department_ID}" Grid.Row="5" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedBarcode" Text="{Binding Barcode}" Grid.Row="6" Grid.Column="1" />
-                <TextBox x:Name="txtSelectedDistributor" Text="{Binding Distributor_ID}" Grid.Row="7" Grid.Column="1" />
+                <Label x:Name="lblSelectedName" Content="{Binding Name}" FontStyle="Italic" FontSize="12" Grid.Row="0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedDisplayName" Text="{Binding Display_Name}" Grid.Row="1" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedPrice" Text="{Binding Price}" Grid.Row="2" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedBrand" Text="{Binding Brand}" Grid.Row="3" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedAisle" Text="{Binding Aisle}" Grid.Row="4" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedDepartment" Text="{Binding Department_ID}" Grid.Row="5" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedBarcode" Text="{Binding Barcode}" Grid.Row="6" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <TextBox x:Name="txtSelectedDistributor" Text="{Binding Distributor_ID}" Grid.Row="7" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" />
             </Grid>
         </Grid>
         <ListView x:Name="lsvProducts" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{Binding Products}">
